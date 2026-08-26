@@ -24,7 +24,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=13" rel="stylesheet">
+  <link href="assets/css/main.css?v=21" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -51,43 +51,50 @@
   <main class="main">
     <section id="hero" class="hero section">
       <div class="container">
-        <div class="row gy-5 align-items-center">
-          <div class="col-lg-7 d-flex flex-column justify-content-center">
-            <span class="hero-kicker" data-aos="fade-up">Tecnología <span aria-hidden="true">·</span> Diseño de
-              soluciones <span aria-hidden="true">·</span> Implementación</span>
-            <h1 data-aos="fade-up" data-aos-delay="60">Tecnología pensada<br class="d-none d-md-block"> para resolver.
+        <div class="row gy-5 align-items-center hero-layout">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center hero-copy">
+            <span class="hero-kicker" data-aos="fade-up">
+              Tecnología <span aria-hidden="true">·</span> Diseño de soluciones <span aria-hidden="true">·</span>
+              Implementación
+            </span>
+
+            <h1 data-aos="fade-up" data-aos-delay="60">
+              Tecnología pensada para resolver.
             </h1>
-            <p class="hero-intro" data-aos="fade-up" data-aos-delay="100">Cada proyecto comienza por comprender una
-              necesidad real y su contexto. Desde ahí se diseña la solución y se implementa con la tecnología que
-              mejor responde al problema.</p>
+
+            <p class="hero-intro" data-aos="fade-up" data-aos-delay="100">
+              Cada proyecto comienza por comprender una necesidad real y su contexto. Desde ahí se diseña la solución y
+              se implementa con la tecnología que mejor responde al problema.
+            </p>
+
             <div class="hero-actions" data-aos="fade-up" data-aos-delay="140">
-              <a href="#portfolio" class="btn-get-started">Explorar proyectos <i class="bi bi-arrow-down-right"></i></a>
+              <a href="#portfolio" class="btn-get-started">
+                <span>Explorar proyectos</span>
+                <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+              </a>
             </div>
-            <ol class="hero-method" aria-label="Metodología ZentDigital" data-aos="fade-up" data-aos-delay="180">
-              <li><span>01</span>Entender</li>
-              <li><span>02</span>Diseñar</li>
-              <li><span>03</span>Implementar</li>
-              <li><span>04</span>Integrar</li>
-              <li><span>05</span>Mejorar</li>
-            </ol>
           </div>
-          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100" aria-hidden="true">
+
+          <div class="col-lg-5 hero-visual-col" data-aos="fade-left" data-aos-delay="100" aria-hidden="true">
             <div class="hero-system-visual">
-              <div class="system-caption"><span></span>Estructura de solución</div>
-              <div class="system-canvas">
-                <div class="system-node node-context"><small>Contexto</small><strong>Necesidad</strong></div>
-                <div class="system-node node-design"><small>Definición</small><strong>Diseño</strong></div>
-                <div class="system-core"><span>ZD</span><small>Solución</small></div>
-                <div class="system-node node-data"><small>Información</small><strong>Datos</strong></div>
-                <div class="system-node node-connect"><small>Relaciones</small><strong>Integración</strong></div>
-                <span class="system-line line-a"></span>
-                <span class="system-line line-b"></span>
-                <span class="system-line line-c"></span>
-                <span class="system-line line-d"></span>
-              </div>
-              <div class="system-status"><span></span>Componentes conectados con un propósito</div>
+              <img src="assets/img/portada.png" alt="" class="hero-visual-image">
             </div>
           </div>
+
+          <div class="col-lg-7 hero-workflow-col" data-aos="fade-up" data-aos-delay="180">
+            <div class="hero-workflow">
+              <span class="hero-workflow-label">De la necesidad al resultado</span>
+              <ol class="hero-method" aria-label="Metodología ZentDigital">
+                <li><span>01</span>Entender</li>
+                <li><span>02</span>Diseñar</li>
+                <li><span>03</span>Implementar</li>
+                <li><span>04</span>Integrar</li>
+                <li><span>05</span>Mejorar</li>
+              </ol>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -97,7 +104,8 @@
         <header class="zd-section-head zd-section-head-centered" data-aos="zd-reveal">
           <span class="zd-eyebrow">Propuesta</span>
           <h2>Primero la necesidad.<br>Después la tecnología.</h2>
-          <p>Los datos permiten comprender, los sistemas permiten actuar y los resultados muestran el valor de la solución.</p>
+          <p>Los datos permiten comprender, los sistemas permiten actuar y los resultados muestran el valor de la
+            solución.</p>
         </header>
 
         <div class="focus-map" data-focus-map data-aos="fade-up" data-aos-delay="80"
@@ -107,8 +115,7 @@
             <span class="focus-route-progress" aria-hidden="true"></span>
             <span class="focus-route-traveler" aria-hidden="true"></span>
 
-            <button class="focus-route-node is-active" type="button" data-focus-target="0"
-              aria-label="Activar Datos">
+            <button class="focus-route-node is-active" type="button" data-focus-target="0" aria-label="Activar Datos">
               <span class="zd-node-core">01</span>
               <small>Datos</small>
             </button>
@@ -155,13 +162,13 @@
         <header class="values-heading" data-aos="zd-reveal">
           <span class="zd-eyebrow">Enfoque</span>
           <h2>Organiza, automatiza, analiza y crece.</h2>
-          <p>Cuatro pilares que representan la forma en que ZentDigital convierte la tecnología en una herramienta útil para cada negocio.</p>
+          <p>Cuatro pilares que representan la forma en que ZentDigital convierte la tecnología en una herramienta útil
+            para cada negocio.</p>
         </header>
 
         <div class="values-editorial">
           <figure class="values-visual" data-aos="fade-up">
-            <img src="assets/img/pilares.png"
-              alt="Organiza, automatiza, analiza y crece como pilares de ZentDigital">
+            <img src="assets/img/pilares.png" alt="Organiza, automatiza, analiza y crece como pilares de ZentDigital">
             <figcaption>Cuatro pilares para transformar una necesidad en una solución que aporta valor.</figcaption>
           </figure>
 
@@ -230,8 +237,8 @@
                 <li>Operación conectada</li>
               </ul>
             </div>
-            <figure class="need-visual visual-single">
-              <img src="assets/img/catalogo.png" alt="Ejemplo visual de información organizada en un sistema">
+            <figure class="need-visual need-visual-hybrid visual-single">
+              <img class="solution-bg" src="assets/img/sistemas-procesos.webp" alt="" loading="lazy" decoding="async">
             </figure>
           </article>
 
@@ -248,19 +255,18 @@
                 <li>Flujos centrados en usuarios</li>
               </ul>
             </div>
-            <div class="experience-mosaic" aria-label="Ejemplos de experiencias digitales">
-              <figure><img src="assets/img/landing-page.png" alt="Ejemplo de experiencia digital para una landing page">
+            <div class="experience-mosaic need-visual-hybrid" aria-label="Ejemplos de experiencias digitales">
+              <figure>
+                <img class="solution-bg" src="assets/img/experiencias-digitales.webp" alt="" loading="lazy"
+                  decoding="async">
               </figure>
-              <figure><img src="assets/img/sitio-corporativo.png"
-                  alt="Ejemplo de experiencia para un sitio corporativo"></figure>
-              <figure><img src="assets/img/ecommerce.png" alt="Ejemplo de experiencia digital para ecommerce"></figure>
             </div>
           </article>
 
           <article class="need-area need-automation zd-interactive" data-aos="fade-up">
             <div class="need-index">03 <span>Automatización e integración</span></div>
-            <figure class="need-visual visual-single">
-              <img src="assets/img/automatizacion.png" alt="Ejemplo visual de automatización e integración de procesos">
+            <figure class="need-visual need-visual-hybrid visual-single">
+              <img class="solution-bg" src="assets/img/automatizacion.webp" alt="" loading="lazy" decoding="async">
             </figure>
             <div class="need-content">
               <h3>Coordinar lo que hoy ocurre por separado.</h3>
@@ -287,8 +293,8 @@
                 <li>Información para decisiones</li>
               </ul>
             </div>
-            <figure class="need-visual visual-single">
-              <img src="assets/img/datos.png" alt="Ejemplo visual de indicadores y organización de datos">
+            <figure class="need-visual need-visual-hybrid visual-single">
+              <img class="solution-bg" src="assets/img/datos.webp" alt="" loading="lazy" decoding="async">
             </figure>
           </article>
         </div>
@@ -521,7 +527,7 @@
               <div class="project-medal-signal" aria-hidden="true"><span></span><span></span><span></span></div>
               <span class="project-number">03 / 05</span>
               <figure class="project-logo" aria-hidden="true">
-                  <img src="assets/img/projects/logos/coratto.png" alt="" loading="lazy" decoding="async">
+                <img src="assets/img/projects/logos/coratto.png" alt="" loading="lazy" decoding="async">
               </figure>
               <p class="project-domain">corattopet.cl</p>
               <h3>CorattoPet</h3>
@@ -539,8 +545,8 @@
             <article id="project-kaleidos" class="project-medal" data-project-panel aria-hidden="true">
               <div class="project-medal-signal" aria-hidden="true"><span></span><span></span><span></span></div>
               <span class="project-number">04 / 05</span>
-                <figure class="project-logo" aria-hidden="true">
-                  <img src="assets/img/projects/logos/kaleidos.png" alt="" loading="lazy" decoding="async">
+              <figure class="project-logo" aria-hidden="true">
+                <img src="assets/img/projects/logos/kaleidos.png" alt="" loading="lazy" decoding="async">
               </figure>
               <p class="project-domain">centrokaleidos.cl</p>
               <h3>Kaleidos</h3>
@@ -558,9 +564,9 @@
             <article id="project-hern" class="project-medal" data-project-panel aria-hidden="true">
               <div class="project-medal-signal" aria-hidden="true"><span></span><span></span><span></span></div>
               <span class="project-number">05 / 05</span>
-                <figure class="project-logo" aria-hidden="true">
-                  <img src="assets/img/projects/logos/hernpropiedades.png" alt="" loading="lazy" decoding="async">
-                </figure>
+              <figure class="project-logo" aria-hidden="true">
+                <img src="assets/img/projects/logos/hernpropiedades.png" alt="" loading="lazy" decoding="async">
+              </figure>
               <p class="project-domain">hernpropiedades.cl</p>
               <h3>Hern Propiedades</h3>
               <p class="project-copy">Experiencia inmobiliaria orientada a explorar propiedades, facilitar consultas y
@@ -649,56 +655,60 @@
     </section>
 
     <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title contact-title" data-aos="fade-up">
         <h2>Contacto</h2>
-        <p>Cuéntanos qué necesitas resolver</p>
+        <p>Cuéntame qué necesitas resolver</p>
+        <span>No necesitas tener todo definido. Puedes escribirme con una idea, una duda o un proceso que quieras ordenar.</span>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 align-items-stretch">
           <div class="col-lg-5">
-            <div class="row gy-4">
-              <div class="col-6">
-                <div class="info-item h-100" data-aos="fade" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Base</h3>
-                  <p>Chile</p>
-                  <p>Trabajo remoto</p>
-                </div>
-              </div>
+            <aside class="contact-invite h-100" data-aos="fade-up" data-aos-delay="180">
+              <span class="contact-invite-kicker">Podemos partir desde algo simple</span>
+              <h3>Una conversación puede ordenar el camino.</h3>
+              <p>No hace falta llegar con una solución lista. Basta con contarme qué está pasando, qué quieres mejorar o qué proceso te está quitando tiempo.</p>
 
-              <div class="col-6">
-                <div class="info-item h-100" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-chat-dots"></i>
-                  <h3>Respuesta</h3>
-                  <p>Cuéntame tu idea</p>
-                  <p>y el problema a resolver</p>
-                </div>
-              </div>
+              <ol class="contact-start-list" aria-label="Formas de iniciar una conversación con ZentDigital">
+                <li>
+                  <span>01</span>
+                  <div>
+                    <strong>Una idea inicial</strong>
+                    <small>Cuando sabes lo que quieres lograr, pero aún no cómo construirlo.</small>
+                  </div>
+                </li>
+                <li>
+                  <span>02</span>
+                  <div>
+                    <strong>Un proceso desordenado</strong>
+                    <small>Cuando la información está dispersa y necesitas una estructura clara.</small>
+                  </div>
+                </li>
+                <li>
+                  <span>03</span>
+                  <div>
+                    <strong>Una tarea repetitiva</strong>
+                    <small>Cuando algo manual podría automatizarse o conectarse mejor.</small>
+                  </div>
+                </li>
+                <li>
+                  <span>04</span>
+                  <div>
+                    <strong>Un sistema que necesita mejorar</strong>
+                    <small>Cuando ya existe una base, pero la experiencia o el flujo no acompañan.</small>
+                  </div>
+                </li>
+              </ol>
 
-              <div class="col-6">
-                <div class="info-item h-100" data-aos="fade" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <p>contacto@zentdigital.cl</p>
-                </div>
+              <div class="contact-direct-links" aria-label="Canales directos de contacto">
+                <a href="mailto:contacto@zentdigital.cl"><i class="bi bi-envelope"></i> contacto@zentdigital.cl</a>
               </div>
-
-              <div class="col-6">
-                <div class="info-item h-100" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-linkedin"></i>
-                  <h3>LinkedIn</h3>
-                  <p>Jeanette Zenteno</p>
-                  <p>Perfil profesional</p>
-                </div>
-              </div>
-
-            </div>
+            </aside>
           </div>
 
           <div class="col-lg-7">
             <form id="contactForm" action="forms/contact.php" method="post" class="contact-form" data-aos="fade-up"
-              data-aos-delay="200">
+              data-aos-delay="220">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -710,25 +720,25 @@
                 </div>
 
                 <div class="col-md-6">
-                  <input type="tel" name="phone" class="form-control" placeholder="Tu teléfono / WhatsApp"
+                  <input type="tel" name="phone" class="form-control" placeholder="Tu WhatsApp"
                     inputmode="tel" pattern="^\+?56?\s?9\s?\d{4}\s?\d{4}$|^9\s?\d{4}\s?\d{4}$"
                     title="Ingresa un número chileno válido. Ej: +56 9 1234 5678" required>
                 </div>
 
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="subject" placeholder="Tipo de necesidad o proyecto"
+                  <input type="text" class="form-control" name="subject" placeholder="¿Qué necesitas resolver?"
                     required>
                 </div>
 
                 <div class="col-12">
                   <textarea class="form-control" name="message" rows="6"
-                    placeholder="Cuéntame qué necesitas construir, automatizar, medir o mejorar" required></textarea>
+                    placeholder="Cuéntame brevemente qué quieres construir, ordenar, automatizar o mejorar" required></textarea>
                 </div>
 
                 <div class="col-12 text-center">
                   <div class="form-status">
                     <div class="loading">
-                      <span>Estamos enviando tu solicitud...</span>
+                      <span>Estoy enviando tu mensaje...</span>
                       <div class="loading-bar">
                         <div class="loading-progress"></div>
                       </div>
@@ -738,7 +748,7 @@
 
                     <div class="sent-message">
                       <span class="success-icon">✓</span>
-                      <span>Solicitud enviada correctamente. Te responderé pronto.</span>
+                      <span>Mensaje enviado correctamente. Te responderé pronto.</span>
                     </div>
                   </div>
 
@@ -746,7 +756,7 @@
                     <div class="g-recaptcha" data-sitekey="6LfSgiMtAAAAAGSP0DE1leNhS3s0t-eWZ_KtnFq6"></div>
                   </div>
 
-                  <button type="submit">Enviar solicitud</button>
+                  <button type="submit">Quiero conversar mi idea</button>
                 </div>
 
               </div>
@@ -801,8 +811,7 @@
       </div>
     </div>
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">ZentDigital</strong>
-        <span>Todos los derechos
+      <p>© <span>Copyright ZentDigital Todos los derechos
           reservados</span>
       </p>
     </div>
@@ -871,7 +880,5 @@
 
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   </script>
-
 </body>
-
 </html>

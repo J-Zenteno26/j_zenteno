@@ -195,7 +195,51 @@
     setActive(0);
     start();
   });
-
+/** Enfoque mobile: acordeón vertical */
+document.querySelectorAll(".values-zd").forEach((section)=>{
+  const mq=window.matchMedia("(max-width: 767px)");
+  const items=Array.from(section.querySelectorAll(".values-list li"));
+  if(!items.length) return;
+  function closeAll(){
+    items.forEach((item)=>{
+      item.classList.remove("is-accordion-open");
+      item.setAttribute("aria-expanded","false");
+    });
+  }
+  function openItem(item){
+    closeAll();
+    item.classList.add("is-accordion-open");
+    item.setAttribute("aria-expanded","true");
+  }
+  function setup(){
+    items.forEach((item,index)=>{
+      item.setAttribute("role","button");
+      item.setAttribute("aria-expanded","false");
+      if(!item.hasAttribute("tabindex")) item.tabIndex=0;
+      if(mq.matches&&index===0) openItem(item);
+      if(!mq.matches) item.classList.remove("is-accordion-open");
+    });
+  }
+  items.forEach((item)=>{
+    item.addEventListener("click",()=>{
+      if(!mq.matches) return;
+      if(item.classList.contains("is-accordion-open")){
+        item.classList.remove("is-accordion-open");
+        item.setAttribute("aria-expanded","false");
+        return;
+      }
+      openItem(item);
+    });
+    item.addEventListener("keydown",(event)=>{
+      if(!mq.matches) return;
+      if(event.key!=="Enter"&&event.key!==" ") return;
+      event.preventDefault();
+      item.click();
+    });
+  });
+  mq.addEventListener("change",setup);
+  setup();
+});
 /**
  * Enfoque / pilares: revelado acumulativo.
  * Cada pilar entra -> palabra se escribe -> descripción aparece -> queda visible.
