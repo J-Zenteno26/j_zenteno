@@ -213,7 +213,7 @@
 
       if (includes) {
         includes.innerHTML = data.includes
-          .map((item) => `<span><i class="bi ${item.icon}" aria-hidden="true"></i>${item.label}</span>`)
+          .map((item) => `<span>${item}</span>`)
           .join("");
       }
 
@@ -581,7 +581,7 @@ document.querySelectorAll("[data-values-pillars]").forEach((group) => {
 
       autoplay = window.setInterval(() => {
         activatePillar(activeIndex + 1);
-      }, 5500);
+      }, 8000);
     }, 2200);
   };
 
