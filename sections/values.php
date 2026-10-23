@@ -2,7 +2,7 @@
   <div class="container-xl">
     <header class="zd-section-head zd-section-head-split">
       <div>
-        <span class="zd-eyebrow">06 · Cómo entiendo la tecnología</span>
+        <span class="zd-eyebrow">04 · Principios de trabajo</span>
         <h2>Ordenar. Simplificar. Conectar. Evolucionar.</h2>
       </div>
       <p>La tecnología aporta cuando reduce fricción, hace visible la información y deja una base preparada para

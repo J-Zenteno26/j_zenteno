@@ -2,14 +2,10 @@
   <div class="container-xl">
     <header class="zd-section-head zd-section-head-split">
       <div>
-        <span class="zd-eyebrow"><?= htmlspecialchars($casesEyebrow ?? '03 · Casos destacados', ENT_QUOTES, 'UTF-8') ?></span>
-        <h2>
-          <span>Tres industrias. Cuatro modelos de datos.</span>
-          <span>Una misma forma de pensar.</span>
-        </h2>
+        <span class="zd-eyebrow"><?= htmlspecialchars($casesEyebrow ?? '02 · Sistemas en operación', ENT_QUOTES, 'UTF-8') ?></span>
+        <h2>Sistemas que funcionan.</h2>
       </div>
-      <p>Los sistemas cambian según el negocio. Mi trabajo es entender esa lógica y convertirla en una solución
-        coherente, mantenible y usable.</p>
+      <p>Casos reales donde una necesidad terminó convertida en una herramienta que hoy sostiene una operación.</p>
     </header>
 
     <div class="zd-case-mobile-guide" aria-hidden="true">
@@ -19,7 +15,7 @@
 
     <div class="zd-case-carousel" data-case-carousel>
       <div class="zd-case-rail" data-case-rail>
-        <article class="zd-case zd-case-coratto" data-aos="fade-up">
+        <article class="zd-case zd-case-coratto">
           <div class="zd-case-copy">
             <div class="zd-case-brand">
               <img src="/assets/img/projects/logos/coratto.png" alt="CorattoPet">
@@ -29,9 +25,7 @@
             <h3>CorattoPet</h3>
 
             <p>
-              Ecommerce conectado con inventario, variantes, lotes, pedidos, pagos, logística y administración.
-              El sistema centraliza la operación diaria y entrega visibilidad sobre ventas, stock y actividad
-              reciente.
+              Ecommerce operativo que conecta catálogo, inventario, lotes, pedidos, pagos y administración en una misma base de datos.
             </p>
 
             <dl>
@@ -50,13 +44,6 @@
                 <dd><span class="zd-live-dot"></span> En producción</dd>
               </div>
             </dl>
-
-            <div class="zd-case-tags">
-              <span>PHP</span>
-              <span>PostgreSQL</span>
-              <span>Webpay</span>
-              <span>Inventario</span>
-            </div>
 
             <a class="zd-case-link" href="https://corattopet.cl/public/" target="_blank" rel="noopener noreferrer">
               Ver proyecto en línea <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
@@ -180,7 +167,7 @@
           </div>
         </article>
 
-        <article class="zd-case zd-case-kaleidos" data-aos="fade-up">
+        <article class="zd-case zd-case-kaleidos">
           <div class="zd-case-copy">
             <div class="zd-case-brand">
               <img src="/assets/img/projects/logos/kaleidos.png" alt="Centro Kaleidos">
@@ -190,8 +177,7 @@
             <h3>Kaleidos</h3>
 
             <p>
-              Sistema de agenda con disponibilidad profesional, reservas, modalidades,
-              recordatorios, ficha clínica, pagos y actividades terapéuticas.
+              Agenda y gestión clínica que conecta reservas, pacientes, recordatorios, pagos y seguimiento dentro de una misma operación.
             </p>
 
             <dl>
@@ -210,13 +196,6 @@
                 <dd><span class="zd-live-dot"></span> En producción</dd>
               </div>
             </dl>
-
-            <div class="zd-case-tags">
-              <span>PHP</span>
-              <span>PostgreSQL</span>
-              <span>Pagos</span>
-              <span>Actividades</span>
-            </div>
 
             <a class="zd-case-link" href="https://centrokaleidos.cl/" target="_blank" rel="noopener noreferrer">
               Ver proyecto en línea <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
@@ -327,7 +306,7 @@
           </div>
         </article>
 
-        <article class="zd-case zd-case-inghern" data-aos="fade-up">
+        <article class="zd-case zd-case-inghern">
           <div class="zd-case-copy">
             <div class="zd-case-brand">
               <img src="/assets/img/projects/logos/icon-inghern.png" alt="INGHERN">
@@ -337,8 +316,7 @@
             <h3>INGHERN</h3>
 
             <p>
-              Sistema de gestión empresarial que conecta organizaciones, plantas, servicios, cotizaciones multiservicio,
-              órdenes de compra, facturación y biblioteca documental dentro de una misma operación trazable.
+              Gestión empresarial que relaciona organizaciones, plantas, servicios, cotizaciones, órdenes de compra, facturación y documentos.
             </p>
 
             <dl>
@@ -357,14 +335,6 @@
                 <dd><span class="zd-live-dot"></span> En Producción</dd>
               </div>
             </dl>
-
-            <div class="zd-case-tags">
-              <span>Laravel</span>
-              <span>PostgreSQL</span>
-              <span>Plantas</span>
-              <span>Documentos</span>
-              <span>OC + facturas</span>
-            </div>
 
             <a class="zd-case-link" href="https://inghern.com/" target="_blank" rel="noopener noreferrer">
               Ver proyecto en línea <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
@@ -467,7 +437,7 @@
           </div>
         </article>
 
-        <article class="zd-case zd-case-nexum" data-aos="fade-up">
+        <article class="zd-case zd-case-nexum">
           <div class="zd-case-copy">
             <div class="zd-case-brand zd-case-brand-text">
               <span class="zd-nexum-mark">N</span>
@@ -477,8 +447,7 @@
             <h3>NEXUMCENTER</h3>
 
             <p>
-              Plataforma multi-organización para gestionar activos, requisitos,
-              documentación, integridad de la información y seguridad de procesos.
+              Plataforma multi-organización para activos industriales, requisitos, documentación, vencimientos e integridad de información.
             </p>
 
             <dl>
@@ -498,13 +467,6 @@
                 <dd><span class="zd-live-dot"></span> En Desarrollo</dd>
               </div>
             </dl>
-
-            <div class="zd-case-tags">
-              <span>Laravel</span>
-              <span>PostgreSQL</span>
-              <span>JSONB</span>
-              <span>AWS S3</span>
-            </div>
 
             
             <span class="zd-case-link is-muted">
@@ -608,6 +570,7 @@
           </div>
         </article>
       </div>
+
 
       <details class="zd-more-projects" data-aos="fade-up">
         <summary>

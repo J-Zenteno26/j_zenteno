@@ -33,98 +33,6 @@
     window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "auto" : "smooth" });
   });
 
-  if (typeof AOS !== "undefined") {
-    AOS.init({ duration: 650, easing: "ease-out-cubic", once: true, offset: 40, disable: reducedMotion.matches });
-  }
-
-  document.querySelectorAll(".zd-interactive").forEach((surface) => {
-    surface.addEventListener("pointermove", (event) => {
-      const rect = surface.getBoundingClientRect();
-      surface.style.setProperty("--spot-x", `${event.clientX - rect.left}px`);
-      surface.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
-    });
-  });
-
-  const domain = document.querySelector("[data-hero-domain]");
-  const model = document.querySelector("[data-hero-model]");
-  const heroScenarios = [
-    {
-      domain: "Comercio & operación",
-      cards: [
-        ["CORE", "Pedido", "estado · total · cliente"],
-        ["DATA", "Producto", "variantes · stock · precio"],
-        ["RULE", "Inventario", "lotes · movimientos · saldo"],
-        ["INTEGRATION", "Pago", "transacción · estado · confirmación"]
-      ]
-    },
-    {
-      domain: "Agenda & atención",
-      cards: [
-        ["CORE", "Reserva", "fecha · hora · modalidad"],
-        ["DATA", "Profesional", "agenda · especialidad · estado"],
-        ["RULE", "Disponibilidad", "bloque · intervalo · excepción"],
-        ["AUTOMATION", "Recordatorio", "destinatario · canal · envío"]
-      ]
-    },
-    {
-      domain: "Activos industriales",
-      cards: [
-        ["CORE", "Activo", "TAG · tipo · criticidad"],
-        ["DATA", "Atributo", "valor · unidad · requisito"],
-        ["RULE", "Integridad", "estado · vigencia · evidencia"],
-        ["STORAGE", "Documento", "versión · acceso · vencimiento"]
-      ]
-    }
-  ];
-
-  if (domain && model && !reducedMotion.matches) {
-    let scenarioIndex = 0;
-    window.setInterval(() => {
-      scenarioIndex = (scenarioIndex + 1) % heroScenarios.length;
-      const scenario = heroScenarios[scenarioIndex];
-      model.classList.add("is-changing");
-      window.setTimeout(() => {
-        domain.textContent = scenario.domain;
-        model.querySelectorAll(".zd-model-card").forEach((card, index) => {
-          const content = scenario.cards[index];
-          if (!content) return;
-          card.querySelector("small").textContent = content[0];
-          card.querySelector("strong").textContent = content[1];
-          card.querySelector("span").textContent = content[2];
-        });
-        model.classList.remove("is-changing");
-      }, 240);
-    }, 4200);
-  }
-
-  const speedData = {
-    landing: { value: "2", weeks: 2, unit: "semanas", kicker: "Alcance habitual", title: "Landing o sitio corporativo personalizado", text: "Diseño, desarrollo responsive, SEO técnico base y publicación.", phases: ["Definición", "Diseño", "Desarrollo", "Publicación"] },
-    platform: { value: "4", weeks: 4, unit: "semanas", kicker: "Alcance intermedio", title: "Plataforma web o ecommerce conectado", text: "Arquitectura, modelado, interfaces, lógica de negocio e integraciones principales.", phases: ["Arquitectura", "Datos", "Interfaz", "Integración"] },
-    system: { value: "6–8", weeks: 8, unit: "semanas", kicker: "Sistema complejo", title: "Sistema a medida con múltiples reglas y módulos", text: "Arquitectura completa, datos, permisos, procesos, integraciones, validación y estabilización.", phases: ["Modelado", "Núcleo", "Módulos", "Estabilización"] }
-  };
-
-  document.querySelectorAll("[data-speed-tab]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const data = speedData[button.dataset.speedTab];
-      if (!data) return;
-      document.querySelectorAll("[data-speed-tab]").forEach((item) => item.classList.toggle("is-active", item === button));
-      document.querySelector("[data-speed-value]").textContent = data.value;
-      document.querySelector("[data-speed-unit]").textContent = data.unit;
-
-      const weeks = document.querySelector("[data-speed-weeks]");
-      weeks.innerHTML = Array.from(
-        { length: data.weeks },
-        (_, index) => `<i style="--week-index:${index}"></i>`
-      ).join("");
-
-      document.querySelector("[data-speed-kicker]").textContent = data.kicker;
-      document.querySelector("[data-speed-title]").textContent = data.title;
-      document.querySelector("[data-speed-text]").textContent = data.text;
-      const phases = document.querySelector("[data-speed-phases]");
-      phases.innerHTML = data.phases.map((phase) => `<span>${phase}</span>`).join("");
-    });
-  });
-
   document.querySelectorAll(".faq-item h3, .faq-item .faq-toggle").forEach((trigger) => {
     trigger.addEventListener("click", () => {
       const item = trigger.closest(".faq-item");
@@ -150,9 +58,9 @@
         time: "3–4",
         timeA11y: "3 a 4 semanas",
         weeks: 4,
-        title: "Landing personalizada + Webpay",
-        copy: "Una presencia digital diseñada a medida, responsive y preparada para recibir pagos. Si no necesitas pagos, una landing simple puede partir desde $280.000.",
-        includes: ["Diseño personalizado", "Responsive", "Webpay", "SEO técnico", "Publicación"],
+        title: "Sitio corporativo + integración de pago",
+        copy: "Una presencia digital implementada de forma responsive y preparada para recibir pagos. Si no necesitas pagos, una landing simple puede partir desde $280.000.",
+        includes: ["Implementación responsive", "Webpay", "Formulario", "SEO base", "Publicación"],
         priorityPrice: "desde $600.000",
         priorityTime: "2 semanas"
       },
@@ -291,117 +199,6 @@
     });
   }
 
-const processData = {
-  understand: {
-    number: "01",
-    kicker: "Entender",
-    title: "Necesidad y contexto",
-    text: "Objetivos, personas, operación, restricciones y decisiones que el sistema debe soportar.",
-    meta: [{ label: "Objetivos", icon: "bi-bullseye" }, { label: "Operación", icon: "bi-gear" }, { label: "Restricciones", icon: "bi-sliders" }]
-  },
-  model: {
-    number: "02",
-    kicker: "Modelar",
-    title: "Datos y reglas",
-    text: "Entidades, relaciones, estados, permisos, validaciones y comportamiento del negocio.",
-    meta: [{ label: "Entidades", icon: "bi-box" }, { label: "Relaciones", icon: "bi-diagram-3" }, { label: "Reglas", icon: "bi-list-check" }]
-  },
-  design: {
-    number: "03",
-    kicker: "Diseñar",
-    title: "Arquitectura y experiencia",
-    text: "Estructura técnica, módulos, flujos, interfaz y decisiones de implementación.",
-    meta: [{ label: "Arquitectura", icon: "bi-bounding-box" }, { label: "Flujos", icon: "bi-signpost-split" }, { label: "UX / UI", icon: "bi-window" }]
-  },
-  build: {
-    number: "04",
-    kicker: "Construir",
-    title: "Desarrollo e integración",
-    text: "Código, base de datos, APIs, servicios externos, pruebas y puesta en producción.",
-    meta: [{ label: "Código", icon: "bi-code-slash" }, { label: "Base de datos", icon: "bi-database" }, { label: "Integraciones", icon: "bi-plug" }]
-  },
-  evolve: {
-    number: "05",
-    kicker: "Evolucionar",
-    title: "Mejora continua",
-    text: "Medición, soporte, ajustes y nuevas capacidades cuando el sistema realmente las necesita.",
-    meta: [{ label: "Medición", icon: "bi-graph-up" }, { label: "Soporte", icon: "bi-life-preserver" }, { label: "Evolución", icon: "bi-arrow-repeat" }]
-  }
-};
-
-const processTabs = [...document.querySelectorAll("[data-process-step]")];
-const processPanel = document.querySelector(".zd-process-panel");
-const processNav = document.querySelector(".zd-process-nav");
-
-if (processTabs.length && processPanel && processNav) {
-  const processKeys = processTabs.map((tab) => tab.dataset.processStep);
-
-  let processIndex = 0;
-  let processTimer = null;
-
-  const changeProcessStep = (index) => {
-    processIndex = index;
-
-    const key = processKeys[index];
-    const data = processData[key];
-
-    if (!data) return;
-
-    processTabs.forEach((tab, tabIndex) => {
-      const isActive = tabIndex === index;
-      const isComplete = tabIndex < index;
-
-      tab.classList.toggle("is-active", isActive);
-      tab.classList.toggle("is-complete", isComplete);
-      tab.setAttribute("aria-selected", isActive ? "true" : "false");
-    });
-
-    processNav.style.setProperty(
-      "--process-progress",
-      `${index * 20}%`
-    );
-
-    processPanel.classList.add("is-changing");
-
-    window.setTimeout(() => {
-      document.querySelector("[data-process-number]").textContent = data.number;
-      document.querySelector("[data-process-kicker]").textContent = data.kicker;
-      document.querySelector("[data-process-title]").textContent = data.title;
-      document.querySelector("[data-process-text]").textContent = data.text;
-
-      document.querySelector("[data-process-meta]").innerHTML = data.meta
-      .map((item) => `
-        <span>
-          <i class="bi ${item.icon}" aria-hidden="true"></i>
-          ${item.label}
-        </span>
-      `)
-      .join("");
-
-      processPanel.classList.remove("is-changing");
-    }, 180);
-  };
-
-  const startProcessAuto = () => {
-    window.clearInterval(processTimer);
-
-    processTimer = window.setInterval(() => {
-      const nextIndex = (processIndex + 1) % processKeys.length;
-      changeProcessStep(nextIndex);
-    }, 3600);
-  };
-
-  processTabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => {
-      changeProcessStep(index);
-      startProcessAuto();
-    });
-  });
-
-  changeProcessStep(0);
-  startProcessAuto();
-}
-
 /* =========================================================
    PROJECT CASES CAROUSEL
    Desktop: botones.
@@ -538,10 +335,13 @@ document.querySelectorAll("[data-case-carousel]").forEach((carousel) => {
 
 /* =========================================================
    VALUES / PRINCIPLES
+   Desktop: autoplay pausado.
+   Mobile: interacción manual para evitar saltos mientras se lee.
 ========================================================= */
 
 document.querySelectorAll("[data-values-pillars]").forEach((group) => {
   const pillars = [...group.querySelectorAll(".zd-value-pillar")];
+  const mobileValues = window.matchMedia("(max-width: 767.98px)");
 
   if (!pillars.length) return;
 
@@ -551,6 +351,10 @@ document.querySelectorAll("[data-values-pillars]").forEach((group) => {
   );
 
   let autoplay = null;
+  let autoplayDelay = null;
+  const AUTOPLAY_INTERVAL = 10000;
+  const INITIAL_DELAY = 7000;
+  const MANUAL_DELAY = 12000;
 
   const activatePillar = (index) => {
     activeIndex = (index + pillars.length) % pillars.length;
@@ -565,24 +369,30 @@ document.querySelectorAll("[data-values-pillars]").forEach((group) => {
   };
 
   const stopAutoplay = () => {
-    if (!autoplay) return;
+    if (autoplayDelay) {
+      window.clearTimeout(autoplayDelay);
+      autoplayDelay = null;
+    }
 
-    window.clearInterval(autoplay);
-    autoplay = null;
+    if (autoplay) {
+      window.clearInterval(autoplay);
+      autoplay = null;
+    }
   };
 
-  const startAutoplay = () => {
+  const startAutoplay = (delay = AUTOPLAY_INTERVAL) => {
     stopAutoplay();
 
-    if (reducedMotion.matches) return;
+    if (reducedMotion.matches || mobileValues.matches) return;
 
-    window.setTimeout(() => {
+    autoplayDelay = window.setTimeout(() => {
+      autoplayDelay = null;
       activatePillar(activeIndex + 1);
 
       autoplay = window.setInterval(() => {
         activatePillar(activeIndex + 1);
-      }, 8000);
-    }, 2200);
+      }, AUTOPLAY_INTERVAL);
+    }, delay);
   };
 
   pillars.forEach((pillar, index) => {
@@ -590,23 +400,31 @@ document.querySelectorAll("[data-values-pillars]").forEach((group) => {
 
     trigger?.addEventListener("click", () => {
       activatePillar(index);
-      startAutoplay();
+      startAutoplay(MANUAL_DELAY);
     });
   });
 
   group.addEventListener("mouseenter", stopAutoplay);
-  group.addEventListener("mouseleave", startAutoplay);
+  group.addEventListener("mouseleave", () => startAutoplay(AUTOPLAY_INTERVAL));
 
   group.addEventListener("focusin", stopAutoplay);
   group.addEventListener("focusout", () => {
     window.setTimeout(() => {
       if (!group.contains(document.activeElement)) {
-        startAutoplay();
+        startAutoplay(AUTOPLAY_INTERVAL);
       }
     }, 0);
   });
 
+  mobileValues.addEventListener?.("change", () => {
+    if (mobileValues.matches) {
+      stopAutoplay();
+    } else {
+      startAutoplay(INITIAL_DELAY);
+    }
+  });
+
   activatePillar(activeIndex);
-  startAutoplay();
+  startAutoplay(INITIAL_DELAY);
 });
 })();

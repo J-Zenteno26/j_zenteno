@@ -66,10 +66,10 @@
       <div class="zd-ecom-hero-copy" data-aos="fade-right">
         <div class="zd-status-pill"><span></span> Ecommerce · Operación · Integraciones</div>
         <h1>Un ecommerce debe vender. <em>Y sostener la operación.</em></h1>
-        <p class="zd-ecom-hero-lead">Diseño y desarrollo ecommerce cuando catálogo, inventario, pagos, pedidos y logística necesitan funcionar como un solo sistema.</p>
+        <p class="zd-ecom-hero-lead">Diseñamos y desarrollamos ecommerce cuando catálogo, inventario, pagos, pedidos y logística necesitan funcionar como un solo sistema.</p>
         <div class="zd-hero-actions">
           <a href="#operacion" class="zd-btn zd-btn-primary">Ver qué conecto <i class="bi bi-arrow-down-right"></i></a>
-          <a href="#contact" class="zd-btn zd-btn-ghost">Cuéntame tu operación</a>
+          <a href="#contact" class="zd-btn zd-btn-ghost">Conversemos sobre tu operación</a>
         </div>
         <div class="zd-ecom-hero-proof">
           <span><i class="bi bi-box-seam"></i> Inventario</span>
@@ -156,7 +156,7 @@
       <header class="zd-section-head zd-section-head-centered">
         <span class="zd-eyebrow">02 · Flujo conectado</span>
         <h2>La venta recorre todo el sistema.</h2>
-        <p>Diseño cada transición para que la información avance sin depender de pasos manuales ni datos duplicados.</p>
+        <p>Diseñamos cada transición para que la información avance sin depender de pasos manuales ni datos duplicados.</p>
       </header>
       <div class="zd-ecom-flow-track" data-aos="fade-up">
         <article>
@@ -242,19 +242,19 @@
         <div class="zd-contact-copy">
           <span class="zd-eyebrow">04 · Conversemos</span>
           <h2><span class="zd-contact-title-desktop">¿Tu ecommerce necesita<br>algo más que una vitrina?</span><span class="zd-contact-title-mobile">¿Tu ecommerce necesita crecer?</span></h2>
-          <p class="zd-contact-desktop-copy">Cuéntame cómo funciona hoy tu venta, inventario y operación. La solución parte por entender dónde están las fricciones antes de elegir tecnología.</p>
-          <p class="zd-contact-mobile-copy">Cuéntame qué necesitas conectar entre venta, stock, pagos y operación.</p>
+          <p class="zd-contact-desktop-copy">Cuéntanos cómo funciona hoy tu venta, inventario y operación. La solución parte por entender dónde están las fricciones antes de elegir tecnología.</p>
+          <p class="zd-contact-mobile-copy">Cuéntanos qué necesitas conectar entre venta, stock, pagos y operación.</p>
           <div class="zd-contact-prompts"><span>Inventario complejo</span><span>Integración de pagos</span><span>Pedidos y logística</span><span>Administración a medida</span></div>
           <a href="mailto:contacto@zentdigital.cl" class="zd-contact-email">contacto@zentdigital.cl <i class="bi bi-arrow-up-right"></i></a>
         </div>
         <form id="contactForm" action="/forms/contact.php" method="post" class="contact-form">
-          <div class="zd-contact-form-head"><span class="zd-contact-form-icon"><i class="bi bi-send"></i></span><div><small>Empecemos</small><strong>Cuéntame tu ecommerce</strong></div></div>
+          <div class="zd-contact-form-head"><span class="zd-contact-form-icon"><i class="bi bi-send"></i></span><div><small>Empecemos</small><strong>Hablemos de tu ecommerce</strong></div></div>
           <div class="row gy-3">
             <div class="col-md-6"><label for="name"><i class="bi bi-person"></i> Nombre</label><input id="name" type="text" name="name" class="form-control" placeholder="Tu nombre" required></div>
             <div class="col-md-6"><label for="email"><i class="bi bi-envelope"></i> Email</label><input id="email" type="email" name="email" class="form-control" placeholder="tu@empresa.cl" required></div>
             <div class="col-md-6"><label for="phone"><i class="bi bi-whatsapp"></i> WhatsApp</label><input id="phone" type="tel" name="phone" class="form-control" placeholder="+56 9 1234 5678" required></div>
             <div class="col-md-6"><label for="subject"><i class="bi bi-bag"></i> Ecommerce</label><input id="subject" type="text" name="subject" class="form-control" placeholder="¿Qué necesitas resolver?" required></div>
-            <div class="col-12"><label for="message"><i class="bi bi-chat-left-text"></i> Contexto</label><textarea id="message" class="form-control" name="message" rows="6" placeholder="Cuéntame cómo funciona hoy tu venta, stock y operación" required></textarea></div>
+            <div class="col-12"><label for="message"><i class="bi bi-chat-left-text"></i> Contexto</label><textarea id="message" class="form-control" name="message" rows="6" placeholder="Cuéntanos cómo funciona hoy tu venta, stock y operación" required></textarea></div>
             <div class="col-12"><div class="form-status"><div class="loading"><span>Enviando...</span></div><div class="error-message"></div><div class="sent-message"><span>✓ Mensaje enviado correctamente. Te responderé pronto.</span></div></div></div>
             <div class="col-12"><div class="zd-recaptcha-wrap"><div class="g-recaptcha" data-sitekey="6LfSgiMtAAAAAGSP0DE1leNhS3s0t-eWZ_KtnFq6"></div></div></div>
             <div class="col-12"><button type="submit" class="zd-btn zd-btn-primary">Enviar proyecto <i class="bi bi-arrow-up-right"></i></button></div>

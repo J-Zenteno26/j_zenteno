@@ -1,85 +1,47 @@
 <section id="process" class="zd-section zd-process">
   <div class="container-xl">
-    <header class="zd-section-head zd-section-head-centered">
-      <span class="zd-eyebrow">04 · Cómo trabajo</span>
-      <h2>Del problema a un sistema que puede evolucionar.</h2>
-      <p>La metodología se adapta al proyecto, pero la secuencia mantiene algo importante: comprender antes de
-        construir.</p>
+    <header class="zd-section-head zd-section-head-split">
+      <div>
+        <span class="zd-eyebrow">03 · Cómo trabajamos</span>
+        <h2>Primero, entender.</h2>
+      </div>
+      <p>Después definimos estructura, alcance y tecnología. No al revés.</p>
     </header>
-    <div class="zd-process-system" data-aos="fade-up">
 
-      <div class="zd-process-nav" role="tablist" aria-label="Etapas del proceso">
-        <button class="zd-process-tab is-active" type="button" role="tab" aria-selected="true"
-          data-process-step="understand">
-          <span>01</span>
-          <i class="bi bi-search zd-process-tab-icon" aria-hidden="true"></i>
-          <strong>Entender</strong>
-        </button>
+    <div class="zd-process-grid">
+      <article class="zd-process-step">
+        <span class="zd-process-step-index">01</span>
+        <i class="bi bi-search" aria-hidden="true"></i>
+        <h3>Comprender</h3>
+        <p>Objetivos, operación, restricciones, usuarios y decisiones que el sistema debe soportar.</p>
+      </article>
 
-        <button class="zd-process-tab" type="button" role="tab" aria-selected="false" data-process-step="model">
-          <span>02</span>
-          <i class="bi bi-diagram-3 zd-process-tab-icon" aria-hidden="true"></i>
-          <strong>Modelar</strong>
-        </button>
+      <article class="zd-process-step">
+        <span class="zd-process-step-index">02</span>
+        <i class="bi bi-diagram-3" aria-hidden="true"></i>
+        <h3>Estructurar</h3>
+        <p>Datos, reglas, módulos, permisos, flujos e integraciones antes de multiplicar código.</p>
+      </article>
 
-        <button class="zd-process-tab" type="button" role="tab" aria-selected="false" data-process-step="design">
-          <span>03</span>
-          <i class="bi bi-bezier2 zd-process-tab-icon" aria-hidden="true"></i>
-          <strong>Diseñar</strong>
-        </button>
+      <article class="zd-process-step">
+        <span class="zd-process-step-index">03</span>
+        <i class="bi bi-code-slash" aria-hidden="true"></i>
+        <h3>Desarrollar</h3>
+        <p>Implementación por etapas y validación funcional sobre una arquitectura coherente.</p>
+      </article>
 
-        <button class="zd-process-tab" type="button" role="tab" aria-selected="false" data-process-step="build">
-          <span>04</span>
-          <i class="bi bi-code-slash zd-process-tab-icon" aria-hidden="true"></i>
-          <strong>Construir</strong>
-        </button>
-
-        <button class="zd-process-tab" type="button" role="tab" aria-selected="false" data-process-step="evolve">
-          <span>05</span>
-          <i class="bi bi-arrow-repeat zd-process-tab-icon" aria-hidden="true"></i>
-          <strong>Evolucionar</strong>
-        </button>
-      </div>
-
-      <div class="zd-process-panel">
-
-        <div class="zd-process-panel-index">
-          <span data-process-number>01</span>
-          <small data-process-kicker>Entender</small>
-        </div>
-
-        <div class="zd-process-panel-content">
-          <span class="zd-process-panel-label">Etapa del proceso</span>
-
-          <h3 data-process-title>
-            Necesidad y contexto
-          </h3>
-
-          <p data-process-text>
-            Objetivos, personas, operación, restricciones y decisiones que el sistema debe soportar.
-          </p>
-        </div>
-
-        <div class="zd-process-panel-meta" data-process-meta>
-          <span><i class="bi bi-bullseye" aria-hidden="true"></i>Objetivos</span>
-          <span><i class="bi bi-gear" aria-hidden="true"></i>Operación</span>
-          <span><i class="bi bi-sliders" aria-hidden="true"></i>Restricciones</span>
-        </div>
-
-      </div>
-
+      <article class="zd-process-step">
+        <span class="zd-process-step-index">04</span>
+        <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+        <h3>Evolucionar</h3>
+        <p>Puesta en producción, estabilización y nuevas capacidades cuando la operación las necesita.</p>
+      </article>
     </div>
-    <div class="zd-ai-note" data-aos="fade-up">
-      <div class="zd-ai-copy">
-        <div class="zd-ai-label"><i class="bi bi-stars"></i><span>Proceso aumentado</span></div>
-        <h3>Uso tecnología actual para avanzar más rápido, sin delegar el criterio.</h3>
-        <p>Integro IA, análisis de datos y automatización para investigar, validar, prototipar y revisar con mayor
-          velocidad. Las decisiones de arquitectura, datos y negocio siguen siendo mías.</p>
-      </div>
-      <div class="zd-ai-visual" aria-hidden="true">
-        <div class="zd-ai-core"><span>IA</span><small>acelerador</small></div>
-        <div class="zd-ai-capabilities"><span>Análisis</span><span>Validación</span><span>Prototipado</span></div>
-      </div>
+
+    <div class="zd-process-commitments" aria-label="Condiciones de trabajo">
+      <div><small>Antes de desarrollar</small><strong>Alcance, precio y plazo definidos</strong></div>
+      <div><small>Durante el proyecto</small><strong>Avances verificables por etapa</strong></div>
+      <div><small>Después de entregar</small><strong>60 días de garantía post-entrega</strong></div>
     </div>
   </div>
 </section>

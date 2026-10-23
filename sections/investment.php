@@ -7,7 +7,7 @@
         detalle.</p>
     </header>
 
-      <div class="zd-investment-shell" data-aos="fade-up">
+      <div class="zd-investment-shell">
 
         <div class="zd-investment-nav" role="tablist" aria-label="Referencia por tipo de proyecto">
         <button class="is-active" type="button" data-investment-tab="presence">Presencia</button>
@@ -37,10 +37,9 @@
 
         <div class="zd-investment-detail">
           <span class="zd-investment-kicker">Referencia habitual</span>
-          <h3 data-investment-title>Landing personalizada + Webpay</h3>
+          <h3 data-investment-title>Sitio corporativo + integración de pago</h3>
 
-          <p data-investment-copy>Una presencia digital diseñada a medida, responsive y preparada para recibir
-            pagos. Si no necesitas pagos, una landing simple puede partir desde $280.000.</p>
+          <p data-investment-copy>Una presencia digital implementada de forma responsive y preparada para recibir pagos. Si no necesitas pagos, una landing simple puede partir desde $280.000.</p>
 
           <button
             type="button"
@@ -51,8 +50,7 @@
           </button>
 
           <div class="zd-investment-includes" data-investment-includes>
-            <span>Diseño personalizado</span><span>Responsive</span><span>Webpay</span><span>SEO
-              técnico</span><span>Publicación</span>
+            <span>Implementación responsive</span><span>Webpay</span><span>Formulario</span><span>SEO base</span><span>Publicación</span>
           </div>
 
           <div class="zd-investment-priority">

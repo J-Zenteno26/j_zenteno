@@ -3,11 +3,11 @@
     <header class="zd-section-head zd-section-head-split">
       <div>
         <span class="zd-eyebrow">05 · Condiciones claras</span>
-        <h2>La tecnología puede ser compleja. Trabajar conmigo no debería serlo.</h2>
+        <h2>La tecnología puede ser compleja. Trabajar con ZentDigital no debería serlo.</h2>
       </div>
 
       <p>
-        Antes de comenzar quedan definidos alcance, precio, plazo
+        Antes de comenzar definimos alcance, precio, plazo
         y condiciones posteriores a la entrega.
       </p>
     </header>
@@ -29,7 +29,7 @@
         <div class="zd-assurance-icon" aria-hidden="true"><i class="bi bi-unlock"></i></div>
         <strong class="zd-assurance-promise__value">Sin <small>permanencia</small></strong>
         <h3>Mantenimiento opcional</h3>
-        <p>Tu sistema no depende de una mensualidad conmigo.</p>
+        <p>Tu sistema no depende de una mensualidad con ZentDigital.</p>
       </article>
       <article class="zd-assurance-promise">
         <div class="zd-assurance-icon" aria-hidden="true"><i class="bi bi-file-earmark-check"></i></div>

@@ -74,10 +74,10 @@
         <div class="zd-saas-hero-copy" data-aos="fade-right">
           <div class="zd-status-pill"><span></span> Producto digital · SaaS · Plataformas</div>
           <h1>Arquitectura SaaS para productos que <em>crecen.</em></h1>
-          <p class="zd-saas-hero-lead">Diseño y desarrollo plataformas SaaS que deben sostener usuarios, datos, permisos, reglas de negocio e integraciones sin convertirse en una suma de parches.</p>
+          <p class="zd-saas-hero-lead">Diseñamos y desarrollamos plataformas SaaS que deben sostener usuarios, datos, permisos, reglas de negocio e integraciones sin convertirse en una suma de parches.</p>
           <div class="zd-hero-actions">
-            <a href="#producto" class="zd-btn zd-btn-primary">Cómo construyo un SaaS <i class="bi bi-arrow-down-right"></i></a>
-            <a href="#contact" class="zd-btn zd-btn-ghost">Cuéntame tu producto</a>
+            <a href="#producto" class="zd-btn zd-btn-primary">Cómo estructuramos un SaaS <i class="bi bi-arrow-down-right"></i></a>
+            <a href="#contact" class="zd-btn zd-btn-ghost">Conversemos sobre tu producto</a>
           </div>
           <div class="zd-saas-hero-proof">
             <span><i class="bi bi-boxes"></i> Producto</span>
@@ -118,7 +118,7 @@
           <article class="zd-saas-product-card is-emerald">
             <div class="zd-saas-product-card-top"><span>01</span><i class="bi bi-grid-1x2"></i></div>
             <h3>Modelo y operación primero</h3>
-            <p>Defino qué resuelve el producto, para quién existe y qué flujo sostiene antes de decidir pantallas o funcionalidades.</p>
+            <p>Definimos qué resuelve el producto, para quién existe y qué flujo sostiene antes de decidir pantallas o funcionalidades.</p>
             <div class="zd-saas-product-tags"><span>modelo</span><span>operación</span><span>enfoque</span></div>
           </article>
           <article class="zd-saas-product-card is-slate">
@@ -253,18 +253,18 @@
             <span class="zd-eyebrow">04 · Conversemos</span>
             <h2><span class="zd-contact-title-desktop">¿Estás construyendo un producto<br>que necesita una base sólida?</span><span class="zd-contact-title-mobile">¿Estás construyendo un SaaS?</span></h2>
             <p class="zd-contact-desktop-copy">Puedes llegar con una idea, un sistema que ya existe o un producto que necesita reorganizarse. Partimos por entender el modelo antes de decidir la arquitectura.</p>
-            <p class="zd-contact-mobile-copy">Cuéntame qué producto quieres construir o qué parte de tu plataforma necesita evolucionar.</p>
+            <p class="zd-contact-mobile-copy">Cuéntanos qué producto quieres construir o qué parte de tu plataforma necesita evolucionar.</p>
             <div class="zd-contact-prompts"><span>Producto nuevo</span><span>SaaS existente</span><span>Multi-tenant</span><span>Arquitectura e integraciones</span></div>
             <a href="mailto:contacto@zentdigital.cl" class="zd-contact-email">contacto@zentdigital.cl <i class="bi bi-arrow-up-right"></i></a>
           </div>
           <form id="contactForm" action="/forms/contact.php" method="post" class="contact-form">
-            <div class="zd-contact-form-head"><span class="zd-contact-form-icon" aria-hidden="true"><i class="bi bi-send"></i></span><div><small>Empecemos</small><strong>Cuéntame tu producto</strong></div></div>
+            <div class="zd-contact-form-head"><span class="zd-contact-form-icon" aria-hidden="true"><i class="bi bi-send"></i></span><div><small>Empecemos</small><strong>Conversemos sobre tu producto</strong></div></div>
             <div class="row gy-3">
               <div class="col-md-6"><label for="name"><i class="bi bi-person" aria-hidden="true"></i> Nombre</label><input id="name" type="text" name="name" class="form-control" placeholder="Tu nombre" required></div>
               <div class="col-md-6"><label for="email"><i class="bi bi-envelope" aria-hidden="true"></i> Email</label><input id="email" type="email" name="email" class="form-control" placeholder="tu@empresa.cl" required></div>
               <div class="col-md-6"><label for="phone"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp</label><input id="phone" type="tel" name="phone" class="form-control" placeholder="+56 9 1234 5678" required></div>
               <div class="col-md-6"><label for="subject"><i class="bi bi-boxes" aria-hidden="true"></i> Producto</label><input id="subject" type="text" name="subject" class="form-control" placeholder="¿Qué estás construyendo?" required></div>
-              <div class="col-12"><label for="message"><i class="bi bi-chat-left-text" aria-hidden="true"></i> Contexto</label><textarea id="message" class="form-control" name="message" rows="6" placeholder="Cuéntame qué hace la plataforma, quién la usa y qué necesitas resolver" required></textarea></div>
+              <div class="col-12"><label for="message"><i class="bi bi-chat-left-text" aria-hidden="true"></i> Contexto</label><textarea id="message" class="form-control" name="message" rows="6" placeholder="Cuéntanos qué hace la plataforma, quién la usa y qué necesitas resolver" required></textarea></div>
               <div class="col-12"><div class="form-status"><div class="loading"><span>Enviando...</span></div><div class="error-message"></div><div class="sent-message"><span>✓ Mensaje enviado correctamente. Te responderé pronto.</span></div></div></div>
               <div class="col-12"><div class="zd-recaptcha-wrap"><div class="g-recaptcha" data-sitekey="6LfSgiMtAAAAAGSP0DE1leNhS3s0t-eWZ_KtnFq6"></div></div></div>
               <div class="col-12"><button type="submit" class="zd-btn zd-btn-primary">Enviar proyecto <i class="bi bi-arrow-up-right"></i></button></div>
