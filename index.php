@@ -19,8 +19,8 @@
     rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/css/main-redesign.css?v=9" rel="stylesheet">
-  <link href="assets/css/home.css?v=2" rel="stylesheet">
+  <link href="assets/css/main-redesign.css?v=11" rel="stylesheet">
+  <link href="assets/css/home.css?v=5" rel="stylesheet">
 </head>
 
 <body class="index-page zd-home-page">

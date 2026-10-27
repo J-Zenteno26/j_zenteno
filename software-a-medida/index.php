@@ -4,336 +4,85 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Desarrollo de Software a Medida en Chile | ZentDigital</title>
+  <title>ZentDigital · Empresa de ingeniería de software</title>
   <meta name="description"
-    content="Diseño y desarrollo software a medida para empresas: arquitectura, modelado de datos, reglas de negocio, integraciones y sistemas complejos.">
-  <meta name="robots" content="index, follow">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_CL">
-  <meta property="og:site_name" content="ZentDigital">
-  <meta property="og:title" content="Desarrollo de Software a Medida en Chile | ZentDigital">
-  <meta property="og:description" content="Diseño y desarrollo software a medida para empresas: arquitectura, datos, reglas de negocio, integraciones y sistemas complejos.">
-  <meta property="og:url" content="https://zentdigital.cl/software-a-medida/">
-  <link rel="canonical" href="https://zentdigital.cl/software-a-medida/">
-  <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    content="ZentDigital es una empresa de ingeniería de software enfocada en arquitectura, modelado de datos, sistemas a medida, SaaS e integraciones para operaciones reales.">
+  <meta name="keywords"
+    content="ingeniería de software, arquitectura de software, modelado de datos, SaaS, sistemas a medida, ecommerce, integraciones, Chile, ZentDigital">
+  <link rel="canonical" href="https://zentdigital.cl/">
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/assets/css/main-redesign.css?v=9" rel="stylesheet">
-  <link href="/assets/css/software-a-medida.css?v=1" rel="stylesheet">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        "@id": "https://zentdigital.cl/software-a-medida/#service",
-        "name": "Desarrollo de software a medida",
-        "serviceType": "Desarrollo de software a medida",
-        "url": "https://zentdigital.cl/software-a-medida/",
-        "description": "Diseño y desarrollo de sistemas a medida para empresas, incluyendo arquitectura, modelado de datos, reglas de negocio, integraciones y desarrollo end-to-end.",
-        "areaServed": {
-          "@type": "Country",
-          "name": "Chile"
-        },
-        "provider": {
-          "@type": "Organization",
-          "name": "ZentDigital",
-          "url": "https://zentdigital.cl/"
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://zentdigital.cl/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Software a medida",
-            "item": "https://zentdigital.cl/software-a-medida/"
-          }
-        ]
-      }
-    ]
-  }
-  </script>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main-redesign.css?v=11" rel="stylesheet">
+  <link href="assets/css/home.css?v=5" rel="stylesheet">
 </head>
 
-<body class="index-page zd-software-page">
+<body class="index-page zd-home-page">
   <header id="header" class="header fixed-top">
     <div class="container-xl zd-nav-shell">
-      <a href="/" class="logo" aria-label="ZentDigital, volver al inicio">
-        <img src="/assets/img/logo1.png" alt="ZentDigital">
+      <a href="#hero" class="logo" aria-label="ZentDigital, volver al inicio">
+        <img src="assets/img/logo1.png" alt="ZentDigital">
       </a>
       <nav id="navmenu" class="navmenu" aria-label="Navegación principal">
         <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="#que-resuelve">Qué resuelve</a></li>
-          <li><a href="#alcance">Alcance</a></li>
-          <li><a href="#process">Proceso</a></li>
+          <li><a href="#engineering" class="active">Ingeniería</a></li>
           <li><a href="#cases">Casos</a></li>
+          <li><a href="#process">Proceso</a></li>
+          <li><a href="#values">Principios</a></li>
+          <li><a href="#company">Empresa</a></li>
         </ul>
       </nav>
-      <a class="zd-nav-cta d-none d-xl-inline-flex" href="#contact">Conversemos <i class="bi bi-arrow-up-right"></i></a>
+      <a class="zd-nav-cta d-none d-xl-inline-flex" href="#contact">Hablemos <i class="bi bi-arrow-up-right"></i></a>
       <button class="mobile-nav-toggle d-xl-none bi bi-list" type="button" aria-label="Abrir navegación"
         aria-controls="navmenu"></button>
     </div>
   </header>
 
   <main>
-    <section id="hero" class="zd-hero">
-      <div class="zd-hero-texture" aria-hidden="true"></div>
-      <div class="container-xl zd-hero-shell">
-        <div class="zd-hero-copy">
-          <span class="zd-hero-kicker">Software a medida · Arquitectura · Datos</span>
-          <h1>Software a medida para operaciones que no caben en una herramienta genérica.</h1>
-          <p class="zd-hero-lead">Desarrollamos sistemas propios cuando los procesos, los datos o las reglas de negocio requieren una solución específica.</p>
-          <p class="zd-hero-support">Desde la comprensión de la operación hasta la arquitectura, el modelo de datos, las interfaces, las integraciones y la puesta en producción.</p>
-
-          <div class="zd-hero-actions">
-            <a href="#que-resuelve" class="zd-btn zd-btn-primary">Ver qué resuelve <i class="bi bi-arrow-down-right"></i></a>
-            <a href="#contact" class="zd-btn zd-btn-ghost">Conversemos</a>
-          </div>
-
-          <div class="zd-hero-capabilities" aria-label="Áreas principales de software a medida">
-            <span>Arquitectura</span>
-            <span>Modelado de datos</span>
-            <span>Integraciones</span>
-          </div>
-        </div>
-
-        <aside class="zd-hero-brief" aria-label="Enfoque de software a medida ZentDigital">
-          <div class="zd-hero-brief-head">
-            <small>CUSTOM / SYSTEM</small>
-            <span>Ingeniería aplicada a la operación</span>
-          </div>
-
-          <div class="zd-hero-brief-list">
-            <article>
-              <span>01</span>
-              <div><strong>Operación</strong><p>Procesos, estados, responsables y puntos de decisión.</p></div>
-            </article>
-            <article>
-              <span>02</span>
-              <div><strong>Información</strong><p>Entidades, relaciones, historial y trazabilidad.</p></div>
-            </article>
-            <article>
-              <span>03</span>
-              <div><strong>Reglas de negocio</strong><p>Validaciones, permisos, automatizaciones e integraciones.</p></div>
-            </article>
-          </div>
-
-          <div class="zd-hero-brief-footer">
-            <div><small>Dirección técnica</small><strong>Jeanette Zenteno</strong></div>
-            <span>Ingeniera de Software</span>
-          </div>
-        </aside>
-      </div>
-
-      <div class="container-xl zd-hero-scope" aria-label="Alcance de la solución">
-        <span>Arquitectura</span>
-        <span>Datos</span>
-        <span>Aplicación</span>
-        <span>Integraciones</span>
-      </div>
-    </section>
-
-    <section id="que-resuelve" class="zd-section zd-engineering">
-      <div class="container-xl">
-        <header class="zd-section-head zd-section-head-split">
-          <div>
-            <span class="zd-eyebrow">01 · Cuándo tiene sentido</span>
-            <h2>Cuando tu operación necesita algo más específico que una herramienta estándar.</h2>
-          </div>
-          <div class="zd-engineering-context">
-            <span class="zd-engineering-context-label">Una señal frecuente</span>
-            <div class="zd-engineering-context-list">
-              <div><strong>01</strong><span>Procesos</span></div>
-              <div><strong>02</strong><span>Información</span></div>
-              <div><strong>03</strong><span>Integraciones</span></div>
-            </div>
-            <p>Empiezan a depender de demasiados pasos manuales.</p>
-          </div>
-        </header>
-
-        <div class="zd-engineering-grid">
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-bezier2"></i></div><div class="zd-feature-index">01</div></div>
-            <h3>El proceso no cabe en una plataforma genérica</h3>
-            <p>La organización tiene flujos, estados, permisos o reglas propias que obligan a trabajar alrededor de la herramienta.</p>
-            <div class="zd-feature-meta"><span>procesos</span><span>roles</span><span>reglas</span></div>
-          </article>
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up" data-aos-delay="60">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-database"></i></div><div class="zd-feature-index">02</div></div>
-            <h3>La información está repartida</h3>
-            <p>Planillas, correos, documentos y sistemas separados dificultan saber cuál es el estado real de la operación.</p>
-            <div class="zd-feature-meta"><span>datos</span><span>trazabilidad</span><span>control</span></div>
-          </article>
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up" data-aos-delay="120">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-arrow-repeat"></i></div><div class="zd-feature-index">03</div></div>
-            <h3>El sistema actual ya no escala</h3>
-            <p>Agregar nuevos procesos, usuarios o integraciones empieza a requerir parches en lugar de evolución controlada.</p>
-            <div class="zd-feature-meta"><span>evolución</span><span>mantenibilidad</span><span>escala</span></div>
-          </article>
-        </div>
-
-        <div class="zd-direction-strip">
-          <div class="zd-direction-strip-copy">
-            <span class="zd-eyebrow">El punto de partida</span>
-            <strong>No empiezo preguntando qué tecnología quieres.</strong>
-          </div>
-          <div class="zd-direction-flow" aria-label="Secuencia de análisis para software a medida">
-            <span>Necesidad</span><i class="bi bi-arrow-right"></i><span>Operación</span><i class="bi bi-arrow-right"></i><span>Datos</span><i class="bi bi-arrow-right"></i><span>Arquitectura</span>
-          </div>
-          <div class="zd-direction-result">
-            <small>Objetivo</small>
-            <strong>Que el software se adapte al negocio.<br>No al revés.</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="alcance" class="zd-section zd-values">
-      <div class="container-xl">
-        <header class="zd-section-head zd-section-head-split">
-          <div>
-            <span class="zd-eyebrow">02 · Qué puede incluir</span>
-            <h2>Un sistema completo, no solo una interfaz.</h2>
-          </div>
-          <p>El alcance depende del problema, pero las capas se diseñan como partes de una misma solución para evitar que datos, lógica e interfaz crezcan desconectados.</p>
-        </header>
-        <div class="zd-engineering-grid">
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-diagram-3"></i></div><div class="zd-feature-index">01</div></div>
-            <h3>Arquitectura y modelado</h3>
-            <p>Módulos, entidades, relaciones, permisos, estados y reglas de negocio definidos antes de que la complejidad quede atrapada en el código.</p>
-            <div class="zd-feature-meta"><span>arquitectura</span><span>modelo de datos</span><span>dominio</span></div>
-          </article>
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up" data-aos-delay="60">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-code-slash"></i></div><div class="zd-feature-index">02</div></div>
-            <h3>Desarrollo end-to-end</h3>
-            <p>Backend, frontend, base de datos y experiencia de uso construidos sobre la misma comprensión del proceso.</p>
-            <div class="zd-feature-meta"><span>backend</span><span>frontend</span><span>UX</span></div>
-          </article>
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up" data-aos-delay="120">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-plug"></i></div><div class="zd-feature-index">03</div></div>
-            <h3>Integraciones e infraestructura</h3>
-            <p>APIs, pagos, servicios externos, almacenamiento, despliegue y automatizaciones conectados al flujo real del sistema.</p>
-            <div class="zd-feature-meta"><span>APIs</span><span>servicios</span><span>producción</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="process" class="zd-section zd-values">
-      <div class="container-xl">
-        <header class="zd-section-head zd-section-head-split">
-          <div>
-            <span class="zd-eyebrow">03 · Cómo se construye</span>
-            <h2>Primero entendemos la operación. Después estructuramos el sistema.</h2>
-          </div>
-          <p>El desarrollo no parte escogiendo una tecnología. Parte identificando el problema, ordenando la información y definiendo cómo debe comportarse el sistema antes de construirlo.</p>
-        </header>
-
-        <div class="zd-engineering-grid">
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-search"></i></div><div class="zd-feature-index">01</div></div>
-            <h3>Entender</h3>
-            <p>Levanto procesos, actores, restricciones, información existente y puntos de fricción para definir qué problema debe resolver realmente el software.</p>
-            <div class="zd-feature-meta"><span>necesidad</span><span>procesos</span><span>contexto</span></div>
-          </article>
-
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up" data-aos-delay="60">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-diagram-3"></i></div><div class="zd-feature-index">02</div></div>
-            <h3>Diseñar</h3>
-            <p>Definimos arquitectura, modelo de datos, módulos, estados, permisos y reglas de negocio para que la solución pueda crecer sin depender de parches.</p>
-            <div class="zd-feature-meta"><span>arquitectura</span><span>datos</span><span>reglas</span></div>
-          </article>
-
-          <article class="zd-engineering-feature zd-interactive" data-aos="fade-up" data-aos-delay="120">
-            <div class="zd-feature-top"><div class="zd-feature-icon"><i class="bi bi-code-square"></i></div><div class="zd-feature-index">03</div></div>
-            <h3>Implementar e integrar</h3>
-            <p>Construimos backend, interfaces e integraciones sobre el modelo definido, conectando servicios y automatizaciones cuando forman parte del flujo.</p>
-            <div class="zd-feature-meta"><span>desarrollo</span><span>integraciones</span><span>producción</span></div>
-          </article>
-        </div>
-
-        <div class="zd-direction-strip">
-          <div class="zd-direction-strip-copy">
-            <span class="zd-eyebrow">Evolución</span>
-            <strong>El sistema no termina cuando se publica.</strong>
-          </div>
-          <div class="zd-direction-flow" aria-label="Evolución de un sistema a medida">
-            <span>Implementar</span><i class="bi bi-arrow-right"></i><span>Integrar</span><i class="bi bi-arrow-right"></i><span>Medir</span><i class="bi bi-arrow-right"></i><span>Mejorar</span>
-          </div>
-          <div class="zd-direction-result">
-            <small>Resultado</small>
-            <strong>Software preparado para evolucionar<br>junto con la operación.</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <?php
-    $casesEyebrow = '04 · Casos destacados';
-    require dirname(__DIR__) . '/sections/cases.php';
-    unset($casesEyebrow);
-    ?>
-
-    <section id="contact" class="zd-section zd-contact">
-      <div class="container-xl">
-        <div class="zd-contact-shell">
-          <div class="zd-contact-copy">
-            <span class="zd-eyebrow">05 · Conversemos</span>
-            <h2><span class="zd-contact-title-desktop">Conversemos sobre el problema.<br>La solución viene después.</span><span class="zd-contact-title-mobile">¿Qué necesita resolver tu organización?</span></h2>
-            <p class="zd-contact-desktop-copy">No necesitas llegar con una especificación técnica. Cuéntanos qué está pasando, qué necesitas controlar o qué parte de la operación ya no escala.</p>
-            <p class="zd-contact-mobile-copy">Cuéntanos el contexto. Lo convertimos en una solución técnica clara.</p>
-            <div class="zd-contact-prompts"><span>Procesos difíciles de controlar</span><span>Información dispersa</span><span>Integraciones pendientes</span><span>Software que necesita evolucionar</span></div>
-            <a href="mailto:contacto@zentdigital.cl" class="zd-contact-email">contacto@zentdigital.cl <i class="bi bi-arrow-up-right"></i></a>
-          </div>
-          <form id="contactForm" action="/forms/contact.php" method="post" class="contact-form">
-            <div class="zd-contact-form-head"><span class="zd-contact-form-icon" aria-hidden="true"><i class="bi bi-send"></i></span><div><small>Empecemos</small><strong>Hablemos de tu proyecto</strong></div></div>
-            <div class="row gy-3">
-              <div class="col-md-6"><label for="name"><i class="bi bi-person" aria-hidden="true"></i> Nombre</label><input id="name" type="text" name="name" class="form-control" placeholder="Tu nombre" required></div>
-              <div class="col-md-6"><label for="email"><i class="bi bi-envelope" aria-hidden="true"></i> Email</label><input id="email" type="email" name="email" class="form-control" placeholder="tu@empresa.cl" required></div>
-              <div class="col-md-6"><label for="phone"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp</label><input id="phone" type="tel" name="phone" class="form-control" placeholder="+56 9 1234 5678" required></div>
-              <div class="col-md-6"><label for="subject"><i class="bi bi-boxes" aria-hidden="true"></i> Proyecto</label><input id="subject" type="text" name="subject" class="form-control" placeholder="¿Qué necesitas resolver?" required></div>
-              <div class="col-12"><label for="message"><i class="bi bi-chat-left-text" aria-hidden="true"></i> Contexto</label><textarea id="message" class="form-control" name="message" rows="6" placeholder="Cuéntanos brevemente qué está pasando y qué necesitas mejorar" required></textarea></div>
-              <div class="col-12"><div class="form-status"><div class="loading"><span>Enviando...</span></div><div class="error-message"></div><div class="sent-message"><span>✓ Mensaje enviado correctamente. Te responderé pronto.</span></div></div></div>
-              <div class="col-12"><div class="zd-recaptcha-wrap"><div class="g-recaptcha" data-sitekey="6LfSgiMtAAAAAGSP0DE1leNhS3s0t-eWZ_KtnFq6"></div></div></div>
-              <div class="col-12"><button type="submit" class="zd-btn zd-btn-primary">Enviar proyecto <i class="bi bi-arrow-up-right"></i></button></div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+    <?php require __DIR__ . '/sections/hero.php'; ?>
+    <?php require __DIR__ . '/sections/engineering.php'; ?>
+    <?php require __DIR__ . '/sections/cases.php'; ?>
+    <?php require __DIR__ . '/sections/process.php'; ?>
+    <?php require __DIR__ . '/sections/values.php'; ?>
+    <?php require __DIR__ . '/sections/contact.php'; ?>
   </main>
 
   <footer class="zd-footer">
     <div class="container-xl zd-footer-grid">
-      <div><a href="/" class="zd-footer-brand">ZentDigital</a><p>Ingeniería de software para sistemas que necesitan estructura.</p></div>
-      <div><span>Navegación</span><a href="/">Inicio</a><a href="#que-resuelve">Software a medida</a><a href="/desarrollo-saas/">Desarrollo SaaS</a><a href="/desarrollo-ecommerce/">Ecommerce</a><a href="#cases">Casos</a></div>
-      <div><span>Contacto</span><a href="mailto:contacto@zentdigital.cl">contacto@zentdigital.cl</a><a href="/#about-jeanette">Jeanette Zenteno</a></div>
+      <div>
+        <a href="#hero" class="zd-footer-brand">ZentDigital</a>
+        <p>Ingeniería de software para operaciones que necesitan estructura.</p>
+      </div>
+      <div>
+        <span>Navegación</span>
+        <a href="#engineering">Ingeniería</a>
+        <a href="/software-a-medida/">Software a medida</a>
+        <a href="/desarrollo-saas/">Desarrollo SaaS</a>
+        <a href="/desarrollo-ecommerce/">Desarrollo Ecommerce</a>
+        <a href="#cases">Casos</a>
+      </div>
+      <div>
+        <span>Contacto</span>
+        <a href="mailto:contacto@zentdigital.cl">contacto@zentdigital.cl</a>
+        <a href="https://www.linkedin.com/in/jeanette-zenteno/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="bi bi-arrow-up-right"></i></a>
+        <a href="#company">Dirección técnica</a>
+      </div>
     </div>
-    <div class="container-xl zd-footer-bottom"><span>© 2026 ZentDigital</span><span>Concepción, Chile · Trabajo con clientes en modalidad remota</span></div>
+    <div class="container-xl zd-footer-bottom">
+      <span>© 2026 ZentDigital</span>
+      <span>Concepción, Chile · Proyectos en modalidad remota</span>
+    </div>
   </footer>
 
   <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up"></i></a>
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/aos/aos.js"></script>
-  <script src="/assets/js/main-redesign.js?v=2"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main-redesign.js?v=4"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
