@@ -270,6 +270,7 @@
     <div><a href="/" class="zd-footer-brand">ZentDigital</a><p>Ingeniería de software para sistemas que necesitan estructura.</p></div>
     <div><span>Servicios</span><a href="/software-a-medida/">Software a medida</a><a href="/desarrollo-saas/">Desarrollo SaaS</a><a href="/desarrollo-ecommerce/">Desarrollo Ecommerce</a></div>
     <div><span>Contacto</span><a href="mailto:contacto@zentdigital.cl">contacto@zentdigital.cl</a><a href="/#about-jeanette">Jeanette Zenteno</a></div>
+    <div><span>Legal</span><a href="/privacidad/">Privacidad</a><a href="/terminos/">Términos</a><a href="/uso-datos-google/">Uso de datos de Google</a></div>
   </div>
   <div class="container-xl zd-footer-bottom"><span>© 2026 ZentDigital</span><span>Concepción, Chile · Trabajo con clientes en modalidad remota</span></div>
 </footer>

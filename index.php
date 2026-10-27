@@ -73,6 +73,12 @@
         <a href="https://www.linkedin.com/in/jeanette-zenteno/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="bi bi-arrow-up-right"></i></a>
         <a href="#company">Dirección técnica</a>
       </div>
+      <div>
+        <span>Legal</span>
+        <a href="/privacidad/">Privacidad</a>
+        <a href="/terminos/">Términos</a>
+        <a href="/uso-datos-google/">Uso de datos de Google</a>
+      </div>
     </div>
     <div class="container-xl zd-footer-bottom">
       <span>© 2026 ZentDigital</span>
