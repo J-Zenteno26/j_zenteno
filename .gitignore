@@ -1,0 +1,7 @@
+# Local environment files and OAuth credentials must never be committed.
+.env
+.env.*
+client_secret*.json
+google-oauth*.json
+*.oauth-token.json
+
