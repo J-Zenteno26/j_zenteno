@@ -2323,37 +2323,17 @@
 
 @media (min-width: 992px) and (max-height: 950px) {
 
-  .zd-home-page .zd-cases {
-    padding-top: 34px;
-    padding-bottom: 46px;
-  }
+  .zd-home-page .zd-cases { padding-top: 34px; padding-bottom: 46px; }
 
-  .zd-home-page .zd-cases .zd-section-head {
-    margin-bottom: 22px;
-  }
+  .zd-home-page .zd-cases .zd-section-head { margin-bottom: 22px; }
 
-  .zd-home-page .zd-case {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 16px;
-    min-height: 0;
-    padding: 18px 18px 0;
-    border-radius: 22px;
-    align-items: start;
-  }
+  .zd-home-page .zd-case { min-height: 660px; padding-top: 40px; }
 
-  .zd-home-page .zd-case-copy h3 {
-    font-size: clamp(2.35rem, 3.5vw, 3.65rem);
-  }
+  .zd-home-page .zd-case-copy h3 { font-size: clamp(2.35rem, 3.5vw, 3.65rem); }
 
-  .zd-home-page .zd-case-workspace .zd-case-copy h3 {
-    font-size: clamp(2.2rem, 3vw, 3.15rem);
-  }
+  .zd-home-page .zd-case-workspace .zd-case-copy h3 { font-size: clamp(2.2rem, 3vw, 3.15rem); }
 
-  .zd-home-page .zd-more-projects {
-    margin-top: 22px;
-  }
+  .zd-home-page .zd-more-projects { margin-top: 22px; }
 
 }
 
