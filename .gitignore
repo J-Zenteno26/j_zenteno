@@ -4,4 +4,5 @@
 client_secret*.json
 google-oauth*.json
 *.oauth-token.json
+google-reviews-cache.json
 
