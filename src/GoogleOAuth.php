@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+$privateEnv = dirname(__DIR__, 2) . '/private/zentdigital-env.php';
+
+if (is_file($privateEnv)) {
+    require_once $privateEnv;
+}
 final class GoogleOAuth
 {
     public const AUTHORIZATION_ENDPOINT = 'https://accounts.google.com/o/oauth2/v2/auth';
